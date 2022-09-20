@@ -1,9 +1,9 @@
 # Strong-password-generator
-Description: this is a password generator who creates a strong 16-charater password that contains a mixture of both uppercase and lowercase letters, numbers and special characters.
+Description: This is a password generator that creates a strong 16-character password that contains a mixture of both uppercase and lowercase letters, numbers, and special characters.
 
-Requirement: must run on a linux machine with Ubuntu OS (higher than 20.04).
+Requirement: Must be executed on a Linux machine running Ubuntu OS 20.04 or higher. 
 
 Usage: 
 
     ./pswdgen.ubuntu.x
-    # Then, follow the instruction to fill in required info to generate a unique password.
+    # Then, follow the instructions to fill in the required info for a unique password.
