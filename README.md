@@ -3,6 +3,10 @@ Description: This is a generator that creates a strong 16-character password tha
 
 Requirement: Must be executed on a Linux machine running Ubuntu OS 20.04 or higher. 
 
+Dependency: uuid-runtime
+
+    sudo apt install uuid-runtime -y
+
 Usage: 
 
     ./pswdgen.ubuntu.x
