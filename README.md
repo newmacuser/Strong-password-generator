@@ -1,5 +1,5 @@
 # Strong-password-generator
-Description: This is a generator that creates a random strong password with a mixture of both uppercase and lowercase letters, numbers, and special characters. When it creates a strong and random password, it also generates a recovery key. 
+Description: This is a generator that randomly creates a strong password with a mixture of both uppercase and lowercase letters, numbers, and special characters. However, when it creates a password, it also generates a recovery key. 
 
 Requirement: Must be executed on a Linux machine running Ubuntu OS (20.04 or higher) or Debian OS (10 or higher). 
 
