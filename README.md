@@ -1,5 +1,5 @@
 # Strong-password-generator
-Description: This is a generator that creates a strong 16-character password that contains a mixture of both uppercase and lowercase letters, numbers, and special characters.
+Description: This is a generator that creates a random 16-character password with a mixture of both uppercase and lowercase letters, numbers, and special characters. When it creates a strong and random password, it also generates a recovery key. 
 
 Requirement: Must be executed on a Linux machine running Ubuntu OS (20.04 or higher) or Debian OS (10 or higher). 
 
@@ -9,10 +9,10 @@ Dependency: uuid-runtime
 
 Usage: 
 
-    # For Ubuntu users
-    ./pswdgen.ubuntu.x
-    # Then, follow the instructions to fill in the required info for a unique password.
-    
-    # For Debian users
-    ./pswdgen.debian.x
-    # Then, follow the instructions to fill in the required info for a unique password.
+    # Example, for Ubuntu users, execute:
+    ./passwdgen.ubuntu.x
+    # Then, follow the instructions to fill in the required information for a unique password.
+    # You will find a output file 'recovery.key' in the same directory.
+    # For recovering an old password, simply execute:
+    ./passwdrec.ubuntu.x
+    # Follow the instructions to fill in your recovery key and user information.
