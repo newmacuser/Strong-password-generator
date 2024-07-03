@@ -24,7 +24,7 @@ caps1=$(echo "${caps0:$(( RANDOM % ${#caps0} )):1}")
 num6=$(( $RANDOM % 12 ))
 tmps3=$(echo $tmps2 | sed -r "s/(.{$num6})/\1$caps1/")
 pswd0=$tmps3${strarr[3]^^}
-echo
-echo "Your strong password is: "$pswd0
-echo "Your password recovery key is: "\""$uuid1-""$caps1"":$num1"":$num2"":$num3:""$num4""$num5"":$num6"\"
-echo "$uuid1-""$caps1"":$num1"":$num2"":$num3:""$num4""$num5"":$num6" > "$app".recover.key
+reckey=$(echo "$uuid1-""$caps1"":$num1"":$num2"":$num3:""$num4""$num5"":$num6" | base64)
+echo "Your password is: "$pswd0
+echo "Your password recovery key is: $reckey"
+echo "$reckey" > "$app".recover.key
