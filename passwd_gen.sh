@@ -27,4 +27,4 @@ pswd0=$tmps3${strarr[3]^^}
 reckey=$(echo "$uuid1-""$caps1"":$num1"":$num2"":$num3:""$num4""$num5"":$num6" | base64)
 echo "Your password is: "$pswd0
 echo "Your password recovery key is: $reckey"
-echo "$reckey" > "$app".recover.key
+# echo "$reckey" > "$app".recover.key
