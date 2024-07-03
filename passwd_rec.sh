@@ -1,6 +1,7 @@
 #!/bin/bash
 echo "Please enter your password recovery key:"
-read reckey
+read reckeyb
+reckey=$(echo $reckeyb | base64 -d)
 echo "Please enter the web/app name (e.g., apple.com):"
 read app
 echo "Please enter your user name:"
@@ -31,4 +32,4 @@ tmps2=$(echo $tmps1 | sed -r "s/(.{10})/\1${symbols[$recnum3]}/")
 tmps3=$(echo $tmps2 | sed -r "s/(.{$recnum6})/\1$reccap/")
 pswd0=$tmps3${strarr[3]^^}
 echo
-echo "Here is your old password for \"$name\": "$pswd0
+echo "Here is your password for \"$name\": "$pswd0
