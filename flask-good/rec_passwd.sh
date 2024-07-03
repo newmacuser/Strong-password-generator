@@ -1,12 +1,10 @@
 #!/bin/bash
-echo "Please enter your password recovery key:"
 read reckeyb
 reckey=$(echo $reckeyb | base64 -d)
-echo "Please enter the web/app name (e.g., apple.com):"
 read app
-echo "Please enter your user name:"
 read username
 name=$app": "$username
+echo "Your input key is:" $reckeyb
 echo "Your input name is: \""$app": "$username\"
 rec0=$(echo $reckey | sed -r 's/(.*)-/\1 /')
 read -a recarr <<< $rec0
