@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+</head>
+<body>
+    <h1>Generate Password</h1>
+    <form action="{{ url_for('generate') }}" method="post">
+        <label for="app">Web/App Name:</label>
+        <input type="text" id="app" name="app"><br><br>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        <input type="submit" value="Generate">
+    </form>
+
+    <h1>Recover Password</h1>
+    <form action="{{ url_for('recover') }}" method="post">
+        <label for="recovery_key">Recovery Key:</label>
+        <input type="text" id="recovery_key" name="recovery_key"><br><br>
+        <label for="app">Web/App Name:</label>
+        <input type="text" id="app" name="app"><br><br>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        <input type="submit" value="Recover">
+    </form>
+</body>
+</html>
