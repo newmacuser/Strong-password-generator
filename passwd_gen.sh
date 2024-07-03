@@ -7,7 +7,7 @@ read username
 name=$app": "$username
 echo "Your input name is: \""$app": "$username\"
 uuid1=$(uuidgen -t)
-uuid5=$(uuidgen --sha1 -n $uuid1 -N '$name')
+uuid5=$(uuidgen --sha1 -n $uuid1 -N "$name")
 strarr=($(echo $uuid5 | tr "-" "\n")) 
 symbols=("!" "@" "#" "$" "%" "^" "&" "(" ")" "[" "]" "~" "+" "," ">" "<" "_" "?" "-" "=" ":" ";")
 size=${#symbols[@]}
