@@ -21,7 +21,7 @@ recnum4=$(echo ${twonums:0:1})
 recnum5=$(echo ${twonums:1:1})
 recnum6=$(echo ${nums[5]})
 
-uuid5=$(uuidgen --sha1 -n $recoveruuid1 -N '$name')
+uuid5=$(uuidgen --sha1 -n $recoveruuid1 -N "$name")
 strarr=($(echo $uuid5 | tr "-" "\n"))
 symbols=("!" "@" "#" "$" "%" "^" "&" "(" ")" "[" "]" "~" "+" "," ">" "<" "_" "?" "-" "=" ":" ";")
 size=${#symbols[@]}
