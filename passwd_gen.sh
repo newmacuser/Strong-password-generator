@@ -27,4 +27,4 @@ pswd0=$tmps3${strarr[3]^^}
 echo
 echo "Your strong password is: "$pswd0
 echo "Your password recovery key is: "\""$uuid1-""$caps1"":$num1"":$num2"":$num3:""$num4""$num5"":$num6"\"
-echo "$uuid1-""$caps1"":$num1"":$num2"":$num3:""$num4""$num5"":$num6" > recover.key
+echo "$uuid1-""$caps1"":$num1"":$num2"":$num3:""$num4""$num5"":$num6" > "$name".recover.key
