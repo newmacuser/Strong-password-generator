@@ -1,8 +1,6 @@
 #!/bin/bash
 # on linux; install uuidgen with apt-get install uuid-runtime
-echo "Please enter the web/app name (e.g., apple.com):"
 read app
-echo "Please enter your user name:"
 read username
 name=$app": "$username
 echo "Your input name is: \""$app": "$username\"
@@ -28,4 +26,3 @@ reckey=$(echo "$uuid1-""$caps1"":$num1"":$num2"":$num3:""$num4""$num5"":$num6" |
 echo
 echo "Your password is: "$pswd0
 echo "Your password recovery key is: $reckey"
-# echo "$reckey" > "$app".recover.key
