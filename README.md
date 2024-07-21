@@ -10,10 +10,10 @@ Dependency: uuid-runtime
 Usage: 
 
     # Example, for Ubuntu users, execute:
-    ./SP.ubuntu.gen
+    ./passwd_gen.sh
     # Then, follow the instructions to fill in the required information for a unique password.
     # You will find an output file 'passrecovery.key' in the same directory.
     
     # For recovering an old password, simply execute:
-    ./SP.ubuntu.rec
+    ./passwd_rec.sh
     # Follow the instructions to fill in your recovery key and user information.
